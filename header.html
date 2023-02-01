@@ -8,28 +8,38 @@
 .menu{
     list-style: none;
 }
-
-.menu > a > img{
-    width: 100px;
-    height: 100px;
+.menu a img{
+    width: 70px;
+    height: 70px;
 }
-
-.menu > a > img, .menu > ul {
+.menu ul {
     display: flex;
 }
-a:link, a:visited, a:active {
+.menu a {
+    background: linear-gradient(rgb(123, 235, 252), 10%, rgb(111, 241, 185));
+    width: 100%;
+    height: 70px;
+    text-align: center;
+}
+.menu a:hover{
+    background-color: rgb(193, 241, 225);
+}
+.menu a li{
+    margin-top: 25px;
+}
+
+.menu a:link,.menu a:visited,.menu a:active {
     text-decoration:none;
 }
 
 
-
-
 </style>
 <header class="menu">
-    <a href="./index.html"><img src="upload/perro.jpg" alt="logo Teol"></a>
     <ul class="menu">
+        <a href="./index.html"><img src="upload/perro.jpg" alt="logo Teol"></a>
         <a href=""><li>Perros</li></a>   
         <a href=""><li>Gatos</li></a>
         <a href=""><li>Roedores</li></a>
+        <a href=""><li>Nosotros</li></a>
     </ul>
 </header>
