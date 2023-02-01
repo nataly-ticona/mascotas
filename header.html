@@ -1,45 +1,22 @@
-
-<style>
-    *{
-    margin: 0;
-    padding: 0;
-}
-
-.menu{
-    list-style: none;
-}
-.menu a img{
-    width: 70px;
-    height: 70px;
-}
-.menu ul {
-    display: flex;
-}
-.menu a {
-    background: linear-gradient(rgb(123, 235, 252), 10%, rgb(111, 241, 185));
-    width: 100%;
-    height: 70px;
-    text-align: center;
-}
-.menu a:hover{
-    background-color: rgb(193, 241, 225);
-}
-.menu a li{
-    margin-top: 25px;
-}
-
-.menu a:link,.menu a:visited,.menu a:active {
-    text-decoration:none;
-}
-
-
-</style>
+<link rel="stylesheet" href="css/header.css">
 <header class="menu">
-    <ul class="menu">
-        <a href="./index.html"><img src="upload/perro.jpg" alt="logo Teol"></a>
+    <ul class="menu-1">
+        <li>
+            <a href="./indice.html"><img src="upload/perro.jpg" alt="logo Teol"></a>
+        </li>
+        <li class="busqueda-final">
+            <input type="text" name="busqueda" id="busqueda" size="12" placeholder="Busca lo que desees">
+            <button>
+                <svg class="input-busqueda" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/>
+                </svg>
+            </button>
+        </li>
+        <li><a href=""></a></li>
+    </ul>
+    <ul class="menu-2">
         <a href=""><li>Perros</li></a>   
         <a href=""><li>Gatos</li></a>
         <a href=""><li>Roedores</li></a>
-        <a href=""><li>Nosotros</li></a>
     </ul>
 </header>

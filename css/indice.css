@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.if-header{
+    /* el important sobreescribe cualquier otro estilo*/
+    width: 100% !important;
+    border: none;
+}

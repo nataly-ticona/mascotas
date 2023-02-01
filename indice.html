@@ -4,44 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/inicio.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/indice.css">
     <title>Inicio</title>
-    <style>
-
-        #comentarios{
-            position: relative;
-            width: 30%;
-            border: 1px solid red;
-
-        }
-
-        #product{
-            position: relative;
-            width: 70%;
-            border: 1px solid red;
-        }
-        .product{
-            width: 100px;
-            height: 100px;
-        }
-        .mySlides {
-            display:none;
-            width: 100%; 
-            height: 300px;
-        }
-        .w3-left, .w3-right, .w3-badge {
-            cursor:pointer;
-        }
-        .w3-badge {height:13px;width:13px;padding:0}
-    </style>
 </head>
 <body>
-    <header id="header">
-        
-    </header>
+    <iframe class="if-header" src="./header.html"></iframe>
     <main id="contenedor">        
-        <div class="w3-content w3-display-container" style="max-width:800px">
+        <!-- <div class="w3-content w3-display-container" style="max-width:800px">
             <img class="mySlides" src="upload/perro.jpg">
             <img class="mySlides" src="upload/perro.jpg">
             <img class="mySlides" src="upload/perro.jpg">
@@ -79,39 +48,10 @@
                 <h3>titulo del comentario</h3>
                 <p>Contenido del texto</p>
             </div>
-        </div>
+        </div> -->
     </main>
     <footer>
     </footer>
    
 </body>
-<script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
-    
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
-    
-    function currentDiv(n) {
-      showDivs(slideIndex = n);
-    }
-    
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("demo");
-      if (n > x.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = x.length}
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" w3-white", "");
-      }
-      x[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " w3-white";
-    }
-
-</script>
 </html>
