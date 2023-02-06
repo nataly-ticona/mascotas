@@ -9,49 +9,21 @@
 </head>
 <body>
     <iframe class="if-header" src="./header.html"></iframe>
-    <main id="contenedor">        
-        <!-- <div class="w3-content w3-display-container" style="max-width:800px">
-            <img class="mySlides" src="upload/perro.jpg">
-            <img class="mySlides" src="upload/perro.jpg">
-            <img class="mySlides" src="upload/perro.jpg">
-            
-            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-                <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-                <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-
-                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-            </div>
-        </div>
-        <div id="products">
-            <div class="product">
-                <img class="product" src="./upload/perro.jpg" alt="producto">
-                <p>texto del producto</p>
-            </div>
-        </div>
-
-        <div id="comentarios">
-            <div class="comentario"> 
-                <h3>titulo del comentario</h3>
-                <p>Contenido del texto</p>
-            </div>
-            <div class="comentario"> 
-                <h3>titulo del comentario</h3>
-                <p>Contenido del texto</p>
-            </div>
-            <div class="comentario"> 
-                <h3>titulo del comentario</h3>
-                <p>Contenido del texto</p>
-            </div>
-            <div class="comentario"> 
-                <h3>titulo del comentario</h3>
-                <p>Contenido del texto</p>
-            </div>
-        </div> -->
+    <main>
+        <section class="carrusel">
+            <img class="img-carrusel" src="upload/nilou.jpeg" alt="">
+            <img class="img-carrusel" src="upload/tartaglia.jpg" alt="">
+            <img class="img-carrusel" src="upload/perro.jpg" alt="">
+            <img class="img-carrusel"src="upload/nilou.jpeg" alt="">
+            <img class="img-carrusel" src="upload/tartaglia.jpg" alt="">
+            <img class="img-carrusel" src="upload/perro.jpg" alt="">
+        </section>
     </main>
-    <footer>
-    </footer>
-   
+    <script>
+        var imgCarrusel = document.getElementsByClassName("img-carrusel");
+        imgCarrusel.onmouseout = function(){
+            imgCarrusel.style.width = "80%";
+        }
+    </script>
 </body>
 </html>

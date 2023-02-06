@@ -7,3 +7,27 @@
     width: 100% !important;
     border: none;
 }
+
+.carrusel {
+    margin: 0 auto;
+    display: flex;
+    width: 90%;
+    height:300px;
+}
+.img-carrusel{
+    width: 0px;
+    flex-grow: 1; /* alinea todos las imagenes en el contenedor*/
+    object-fit: cover; /* sobrepone una imagen a la otra*/
+    opacity: .7; /*opacidad*/
+    transition: .5s ease;
+    height:300px;
+}
+
+.img-carrusel:hover{
+    cursor: alias;
+    width: 80%;
+    opacity: 1;
+    filter: contrast(100%);
+}
+
+
