@@ -14,7 +14,7 @@
             <img class="img-carrusel normal" src="upload/nilou.jpeg" alt="">
             <img class="img-carrusel normal" src="upload/tartaglia.jpg" alt="">
             <img class="img-carrusel normal" src="upload/perro.jpg" alt="">
-            <img class="img-carrusel normal"src="upload/nilou.jpeg" alt="">
+            <img class="img-carrusel normal" src="upload/nilou.jpeg" alt="">
             <img class="img-carrusel normal" src="upload/tartaglia.jpg" alt="">
             <img class="img-carrusel normal" src="upload/perro.jpg" alt="">
         </section>
@@ -22,15 +22,22 @@
     <script>
         var imgCarrusel = document.getElementsByClassName("img-carrusel");
         for (let i = 0; i < imgCarrusel.length; i++) {
-            
-            imgCarrusel[i].onmouseout = function(){
-            imgCarrusel[i].classList.add("unico");
-
-
-            
+            var seleccionada = imgCarrusel[i].onmouseout;
+              anadir(seleccionada);
+            var eliminarE = imgCarrusel[i];
         }
-            
+        eliminar(seleccionada, eliminarE)
+        
+        function anadir(sel){
+                sel.classList.add("unico"); 
+        } 
+
+        function eliminar(sel, eli){
+            if (sel != eli) {
+                e.classList.remove("unico");    
+            }
         }
+        
     </script>
 </body>
 </html>
