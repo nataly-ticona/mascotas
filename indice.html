@@ -11,18 +11,25 @@
     <iframe class="if-header" src="./header.html"></iframe>
     <main>
         <section class="carrusel">
-            <img class="img-carrusel" src="upload/nilou.jpeg" alt="">
-            <img class="img-carrusel" src="upload/tartaglia.jpg" alt="">
-            <img class="img-carrusel" src="upload/perro.jpg" alt="">
-            <img class="img-carrusel"src="upload/nilou.jpeg" alt="">
-            <img class="img-carrusel" src="upload/tartaglia.jpg" alt="">
-            <img class="img-carrusel" src="upload/perro.jpg" alt="">
+            <img class="img-carrusel normal" src="upload/nilou.jpeg" alt="">
+            <img class="img-carrusel normal" src="upload/tartaglia.jpg" alt="">
+            <img class="img-carrusel normal" src="upload/perro.jpg" alt="">
+            <img class="img-carrusel normal"src="upload/nilou.jpeg" alt="">
+            <img class="img-carrusel normal" src="upload/tartaglia.jpg" alt="">
+            <img class="img-carrusel normal" src="upload/perro.jpg" alt="">
         </section>
     </main>
     <script>
         var imgCarrusel = document.getElementsByClassName("img-carrusel");
-        imgCarrusel.onmouseout = function(){
-            imgCarrusel.style.width = "80%";
+        for (let i = 0; i < imgCarrusel.length; i++) {
+            
+            imgCarrusel[i].onmouseout = function(){
+            imgCarrusel[i].classList.add("unico");
+
+
+            
+        }
+            
         }
     </script>
 </body>
