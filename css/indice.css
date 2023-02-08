@@ -47,8 +47,10 @@ body{
     width: 90%;
     display: flex;
     margin: 0 auto;
+    
 }
 .productos-global {
+    background-color: aquamarine;
     margin: 2% 1%;
     width: 100%;
     display: flex;
@@ -61,18 +63,19 @@ body{
     height: 150px;
     border-radius: 15px;
 }
-    /* ----- DETALLE DENTRO DEL DIV ----- */
+    /* ----- DETALLE DENTRO DEL DIV arreglar con grid estos cuadros----- */
 .detalle-producto{
     width: 100%;
     height: 100px;
     padding: 2%;
     text-align: center;
     margin: 2% 1%;
-    border: 1px solid black;
+    position: relative;
 }
 .detalle-producto>div>img{
     width: 70px;
     height: 70px;
+    position: relative;
 }
 
 /* ---------- PROMOCIONES ---------- */
@@ -80,6 +83,7 @@ body{
     margin: 0 auto;
     width: 80%;
     height: 200px;
+    background-color: aquamarine;
 }
 .promocion>a{
     margin: 0 auto;
