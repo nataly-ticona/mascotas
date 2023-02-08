@@ -25,17 +25,11 @@
     transition: .5s ease;
 }
 
-.img-carrusel:hover{
-    cursor: alias;
-    width: 80%;
-    height: 300px;
-    opacity: 1;
-    filter: contrast(100%);
-}
-
 .unico{
     width: 80%;
-    height: 300px;
+    
+    opacity: 1;
+    filter: contrast(100%);
 }
 
 /* ---------- PRODUCTOS ---------- */
@@ -61,6 +55,7 @@
     width: 100%;
     text-align: center;
     padding: 15px;
+    margin: 2% 5%;
 }
 .detalle-producto img{
     width: 70px;

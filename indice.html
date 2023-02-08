@@ -11,12 +11,12 @@
     <iframe class="outside" src="./header.html"></iframe>
     <main>
         <section class="carrusel">
-            <img id="1" class="img-carrusel" src="upload/nilou.jpeg" alt="" onmouseenter="myMoveFunction(document.getElementById(`1`))">
-            <img id="2" class="img-carrusel" src="upload/tartaglia.jpg" alt="" onmouseenter="myMoveFunction(document.getElementById(`2`))">
-            <img id="3" class="img-carrusel" src="upload/perro.jpg" alt="" onmouseenter="myMoveFunction(document.getElementById(`3`))">
-            <img id="4" class="img-carrusel" src="upload/nilou.jpeg" alt="" onmouseenter="myMoveFunction(document.getElementById(`4`))">
-            <img id="5" class="img-carrusel" src="upload/tartaglia.jpg" alt="" onmouseenter="myMoveFunction(document.getElementById(`5`))">
-            <img id="6" class="img-carrusel" src="upload/perro.jpg" alt="" onmouseenter="myMoveFunction(document.getElementById(`6`))">
+            <img class="img-carrusel" src="upload/nilou.jpeg" alt="" onmouseenter="moveFunction(this)">
+            <img class="img-carrusel" src="upload/tartaglia.jpg" alt="" onmouseenter="moveFunction(this)">
+            <img class="img-carrusel" src="upload/perro.jpg" alt="" onmouseenter="moveFunction(this)">
+            <img class="img-carrusel" src="upload/nilou.jpeg" alt="" onmouseenter="moveFunction(this)">
+            <img class="img-carrusel" src="upload/tartaglia.jpg" alt="" onmouseenter="moveFunction(this)">
+            <img class="img-carrusel" src="upload/perro.jpg" alt="" onmouseenter="moveFunction(this)">
         </section>
         <div class="productos">
             <div class="productos-global">
@@ -59,36 +59,18 @@
             </div>
         </div>
     </main>
-    <iframe class="outside" src="./footer.html" frameborder="0"></iframe>
+    <iframe class="outside" src="./footer.html" ></iframe>
     <script>
+        // con el this mandamos el mismo elemento que estamos mostrando
         let imgs = document.getElementsByClassName("img-carrusel");
-    
 
-        function myMoveFunction(e) {
+        function moveFunction(e) {
             for (let index = 0; index < imgs.length; index++) {        
                 imgs[index].classList.remove("unico");       
             }
 
             e.classList.add("unico");
-        }
-
-
-    //    for (let index = 0; index < imgs.length; index++) {
-        
-    //         imgs[index].addEventListener("mouseout", function () {
-    //             console.log("hola");
-
-               
-
-
-    //         });
-    //    }
-
-
-
-
-
-        
+        }        
     </script>
 </body>
 </html>
