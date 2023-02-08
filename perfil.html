@@ -14,31 +14,99 @@
         /* el important sobreescribe cualquier otro estilo*/
         width: 100% !important;
         border: none;
-        
         }
+
+        body{
+            background-color: rgb(99, 85, 85);
+        }
+
         .grupo-2{
             display: flex;
             justify-content: center;
             margin: 0 auto;
             width: 80%;
-            
+            padding-bottom: 50px;
         }
         .listas{
             list-style: none;
-            display: none;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap:2em;
         }
-        .listas>li{
-            border:1px solid black;
-            border-radius: 10px;
-            padding: 5px 5px;
-            width: 50%;
-            margin: 10px 10px ;
-            
-        }
+        
         .boton-menu:checked ~ .listas{
             display: block;
         }
         
+        /* estilo boton */
+        .listas>li {
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            position: relative;
+            padding: 5em 0;
+            border: none;
+            outline: none;
+            background: #350642;
+            color: #dcc2e4;
+            cursor: pointer;
+            transition: .5s;
+            overflow: hidden;
+        }
+
+        .listas>li:hover {
+            color: #fff;
+        }
+
+        .listas>li span {
+            position: absolute;
+            background: #fff;
+            transition: .5s;
+        }
+
+        .listas>li span:nth-child(1) {
+            width: 100%;
+            height: 1px;
+            top: 0;
+            left: -100%;
+        }
+
+        .listas>li span:nth-child(2) {
+            width: 100%;
+            height: 1px;
+            bottom: 0;
+            right: -100%;
+        }
+
+        .listas>li span:nth-child(3) {
+            width: 1px;
+            height: 100%;
+            bottom: -100%;
+            left: 0;
+        }
+
+        .listas>li span:nth-child(4) {
+            width: 1px;
+            height: 100%;
+            top: -100%;
+            right: 0;
+        }
+
+        .listas>li:hover span:nth-child(1) {
+            left: 0;
+        }
+
+        .listas>li:hover span:nth-child(2) {
+            right: 0;
+        }
+
+        .listas>li:hover span:nth-child(3) {
+            bottom: 0;
+        }
+
+        .listas>li:hover span:nth-child(4) {
+            top: 0;
+        }
         </style>
 </head>
 <body>
@@ -47,15 +115,39 @@
         <div class="grupo-1">
             <h1>Mi cuenta</h1>
         </div>
-        <button class="botonMenu"> </button>
+        
         <div class="grupo-2">
             <ul class="listas">
-                <li>Mis pedidos</li>
-                <li>Inicio de sesion y seguridad</li>
-                <li>Mis pagos</li>
-                <li>preferencias de envio</li>
-                <li>contactanos</li>
-                <li>Quienes somos</li>
+                <li><span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Mis pedidos</li>
+                <li><span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Inicio de sesion y seguridad</li>
+                <li><span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Mis pagos</li>
+                <li><span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    preferencias de envio</li>
+                <li><span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    contactanos</li>
+                <li><span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Quienes somos</li>
             </ul>
         </div>
     </main>
