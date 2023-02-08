@@ -7,8 +7,18 @@
     width: 100% !important;
     border: none;
 }
+/*  POSIBLE PALETA
+.color1 {color: #503f59;}
+.color2 {color: #6e4a67;}
+.color3 {color: #a56480;}
+.color4 {color: #dc8e95;}
+.color5 {color: #dfba9d;}
+*/
 :root{
+    --fondo:rgb(213, 244, 255);
     --bordes:rgb(121, 121, 121);
+}
+body{
 }
 /* ---------- CARRUSEL ---------- */
 .carrusel {
@@ -21,13 +31,13 @@
     width: 0px;
     flex-grow: 1; /* alinea todos las imagenes en el contenedor*/
     object-fit: cover; /* sobrepone una imagen a la otra*/
-    opacity: .7; /*opacidad*/
+    opacity: .8; /*opacidad*/
     transition: .5s ease;
 }
 
 .unico{
     width: 80%;
-    
+    height: 300px;
     opacity: 1;
     filter: contrast(100%);
 }
@@ -39,13 +49,14 @@
     margin: 0 auto;
 }
 .productos-global {
-    margin:50px 0px 10px;
+    margin: 2% 1%;
     width: 100%;
     display: flex;
     border: 1px solid var(--bordes);
     border-radius: 15px;
 }
-.productos-global a img{
+.productos-global>a>img{
+    margin: 10% 0% 10% 5%;
     width: 150px;
     height: 150px;
     border-radius: 15px;
@@ -53,11 +64,28 @@
     /* ----- DETALLE DENTRO DEL DIV ----- */
 .detalle-producto{
     width: 100%;
+    height: 100px;
+    padding: 2%;
     text-align: center;
-    padding: 15px;
-    margin: 2% 5%;
+    margin: 2% 1%;
+    border: 1px solid black;
 }
-.detalle-producto img{
+.detalle-producto>div>img{
     width: 70px;
     height: 70px;
 }
+
+/* ---------- PROMOCIONES ---------- */
+.promocion{
+    margin: 0 auto;
+    width: 80%;
+    height: 200px;
+}
+.promocion>a{
+    margin: 0 auto;
+}
+.promocion>a>img{
+    width: 100%;
+    height: 200px;
+}
+
