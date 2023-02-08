@@ -10,6 +10,12 @@
             margin:0;
             padding: 0;
         }
+        .outside{
+        /* el important sobreescribe cualquier otro estilo*/
+        width: 100% !important;
+        border: none;
+        
+        }
         .grupo-2{
             display: flex;
             justify-content: center;
@@ -19,9 +25,7 @@
         }
         .listas{
             list-style: none;
-            display: flex;
-            
-            
+            display: none;
         }
         .listas>li{
             border:1px solid black;
@@ -31,13 +35,19 @@
             margin: 10px 10px ;
             
         }
+        .boton-menu:checked ~ .listas{
+            display: block;
+        }
+        
         </style>
 </head>
 <body>
+    <iframe src="./header.html" class="outside"></iframe>
     <main class="main">
         <div class="grupo-1">
             <h1>Mi cuenta</h1>
         </div>
+        <button class="botonMenu"> </button>
         <div class="grupo-2">
             <ul class="listas">
                 <li>Mis pedidos</li>
@@ -49,6 +59,7 @@
             </ul>
         </div>
     </main>
+    <iframe src="./footer.html" class="outside"></iframe>
 </body>
 </html>
 
