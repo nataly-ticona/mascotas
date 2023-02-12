@@ -8,11 +8,11 @@
     border: none;
 }
 /*  POSIBLE PALETA
-.color1 {color: #503f59;}
-.color2 {color: #6e4a67;}
-.color3 {color: #a56480;}
-.color4 {color: #dc8e95;}
-.color5 {color: #dfba9d;}
+.color1 {color: #301701;}
+.color2 {color: #604A36;}
+.color3 {color: #C2A693;}
+.color4 {color: #FAF6F0;}
+.color5 {color: #EAEFF7;}
 */
 :root{
     --fondo:rgb(213, 244, 255);
@@ -25,7 +25,7 @@ body{
     margin: 0 auto;
     display: flex;
     width: 100%;
-    height:300px;
+    height:600px;
 }
 .img-carrusel{
     width: 0px;
@@ -36,8 +36,8 @@ body{
 }
 
 .unico{
-    width: 80%;
-    height: 300px;
+    width: 60%;
+    height: 600px;
     opacity: 1;
     filter: contrast(100%);
 }
@@ -47,10 +47,8 @@ body{
     width: 90%;
     display: flex;
     margin: 0 auto;
-    
 }
 .productos-global {
-    background-color: aquamarine;
     margin: 2% 1%;
     width: 100%;
     display: flex;
@@ -63,19 +61,18 @@ body{
     height: 150px;
     border-radius: 15px;
 }
-    /* ----- DETALLE DENTRO DEL DIV arreglar con grid estos cuadros----- */
+    /* ----- DETALLE DENTRO DEL DIV ----- */
 .detalle-producto{
     width: 100%;
     height: 100px;
     padding: 2%;
     text-align: center;
     margin: 2% 1%;
-    position: relative;
+    border: 1px solid black;
 }
 .detalle-producto>div>img{
     width: 70px;
     height: 70px;
-    position: relative;
 }
 
 /* ---------- PROMOCIONES ---------- */
@@ -83,7 +80,6 @@ body{
     margin: 0 auto;
     width: 80%;
     height: 200px;
-    background-color: aquamarine;
 }
 .promocion>a{
     margin: 0 auto;

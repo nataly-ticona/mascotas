@@ -3,11 +3,12 @@
     padding: 0;
 }
 :root{
-    --verde-claro:rgb(43, 133, 103);
-    --verde-hover: rgb(49, 149, 116);
+    --original:#C2A693;
+    --original-hover: #c2a693d7;
+    --original-oscuro: #301701;
 }
-#main-footer{
-    background-color:var(--verde-claro);
+#main-footer{  
+    background-color:var(--original);
     text-align: center;
 }
 
@@ -30,7 +31,7 @@
     list-style: none; 
 }
 .listas li:hover{
-    background-color: var(--verde-hover);
+    background-color: var(--original-hover);
 }
 .listas h4{
     padding-bottom: 10px;
@@ -39,7 +40,7 @@ a:link,a:active{
     text-decoration: none;
 }
 .grupo-2{
-    background-color: #043308;;
+    background-color: var(--original-oscuro);
     border-top: 1px solid black;
     color: white;
 }
