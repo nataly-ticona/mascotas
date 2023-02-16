@@ -16,8 +16,8 @@
 .color5 {color: #EAEFF7;}
 */
 :root{
-    --fondo:rgb(213, 244, 255);
-    --bordes:rgb(121, 121, 121);
+    --fondo:#FAF6F0;
+    --video:  #604A36;
 }
 /* CARRUSEL DE BOOTSTRAP */
 .carousel-item{
@@ -63,7 +63,7 @@
     margin-bottom: 10px;
     width: 90%;
     display: flex;
-    background-color: bisque;
+    background-color: var(--fondo);
     border-radius: 15px;
     border: 1px solid red;
 }
@@ -118,4 +118,28 @@
 }
 .catalogo-item img{
     width: 100%;
+}
+
+/* ---------- MULTIMEDIA ---------- */
+.media{
+    width: 70%;
+    margin: 0 auto;
+    background-color: var(--fondo);
+}
+.multimedia{
+    width: 50%;
+    margin: 0 auto;
+    background-color: var(--video);
+    border-radius: 15px;
+}
+
+.video-mascotas{
+    height: 500px;
+    width: 100%;
+
+}
+.audio-hamster{
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 15px;
 }
