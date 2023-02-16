@@ -6,6 +6,7 @@
     /* el important sobreescribe cualquier otro estilo*/
     width: 100% !important;
     border: none;
+    bottom: 0;
 }
 /*  POSIBLE PALETA
 .color1 {color: #301701;}
@@ -18,38 +19,48 @@
     --fondo:rgb(213, 244, 255);
     --bordes:rgb(121, 121, 121);
 }
+/* CARRUSEL DE BOOTSTRAP */
+.carousel-item{
+    height: 600px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+.carousel-item>img{
+    height: 100%;
+}
 /* ---------- CARRUSEL ---------- */
-.carrusel {
+/* .carrusel {
     margin: 0 auto;
     display: flex;
     width: 100%;
     height:600px;
 }
-.img-carrusel{
-    width: 0px;
-    flex-grow: 1; /* alinea todos las imagenes en el contenedor*/
-    object-fit: cover; /* sobrepone una imagen a la otra*/
-    opacity: .8; /*opacidad*/
-    transition: .5s ease;
-}
+//.img-carrusel{
+  //  width: 0%;
+    //flex-grow: 1; /* alinea todos las imagenes en el contenedor*/
+    /* object-fit: cover; sobrepone una imagen a la otra */
+    /* opacity: .8; opacidad */
+    /* transition: .5s; */
+/* }  */
 
-.unico{
+/* .unico{
     width: 50%;
-    height: 600px;
+    height: fit-content;
     opacity: 1;
-    filter: contrast(100%);
-}
+    filter: contrast(110%);
+} */
 
 /* ---------- PRODUCTOS ---------- */
 .productos{
-    width: 90%;
+    width: 80%;
     display: grid;
     /* repite el tamaño de cada columna en un 50% */
     grid-template-columns: repeat(2, 50%);
     margin: 0 auto;
 }
 .productos-global {
-    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 90%;
     display: flex;
     background-color: bisque;
@@ -58,20 +69,22 @@
 }
 /* ----- FOTO FRL DIV */
 .productos-global>a{
-    width: 20%;
+    width:30%;
+    padding: 1%;
 }
 .productos-global>a>img{
     width: 100%;
 }
     /* ----- OPCIONES DENTRO DEL DIV ----- */
 .detalle-producto{
-    width: 80%;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    padding: 1%;
 }
 .detalle-producto>div>img{
-
-
-    width: 15%;
-    height: 100px;
+    width: 80%;
+    height: fit-content;
 }
 
 /* ---------- PROMOCIONES ---------- */
