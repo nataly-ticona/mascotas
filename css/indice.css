@@ -43,37 +43,35 @@
 /* ---------- PRODUCTOS ---------- */
 .productos{
     width: 90%;
-    display: flex;
+    display: grid;
+    /* repite el tamaño de cada columna en un 50% */
+    grid-template-columns: repeat(2, 50%);
     margin: 0 auto;
 }
 .productos-global {
-    margin: 2% 1%;
-    width: 100%;
+    margin: 0 auto;
+    width: 90%;
     display: flex;
     background-color: bisque;
     border-radius: 15px;
+    border: 1px solid red;
 }
+/* ----- FOTO FRL DIV */
 .productos-global>a{
-    padding: 10% 0% 10% 3%;
-    width: 150px;
-    border-radius: 15px;
+    width: 20%;
 }
 .productos-global>a>img{
-    width: 150px;
-    height: 150px;
-}
-    /* ----- DETALLE DENTRO DEL DIV ----- */
-.detalle-producto{
     width: 100%;
-    padding: 2%;
-    text-align: center;
-    margin: 2% 1%;
-    background-color: antiquewhite;
-    border-radius: 5px;
+}
+    /* ----- OPCIONES DENTRO DEL DIV ----- */
+.detalle-producto{
+    width: 80%;
 }
 .detalle-producto>div>img{
-    width: 70px;
-    height: 70px;
+
+
+    width: 15%;
+    height: 100px;
 }
 
 /* ---------- PROMOCIONES ---------- */
