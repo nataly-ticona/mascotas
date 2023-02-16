@@ -126,17 +126,26 @@
     margin: 0 auto;
     background-color: var(--fondo);
 }
-.multimedia{
-    width: 50%;
+.texto{
+    padding-top: 20px;
+    width: 85%;
     margin: 0 auto;
-    background-color: var(--video);
+}
+.texto p{
+    text-align: justify;
+}
+.multimedia{
+    width: 70%;
+    margin: 0 auto;
     border-radius: 15px;
 }
 
 .video-mascotas{
     height: 500px;
     width: 100%;
-
+}
+.video-mascotas track{
+    color: black;
 }
 .audio-hamster{
     margin: 0 auto;
