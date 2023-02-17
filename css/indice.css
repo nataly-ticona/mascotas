@@ -20,7 +20,7 @@
     --video:  #604A36;
 }
 
-/* GLOBALES */
+/* ---------- GLOBALES ---------- */
 .item-hover{
     transition: all 0.5s;
     border-radius: 10px;
@@ -35,9 +35,9 @@
     text-align: center;
 }
 
-/* CARRUSEL DE BOOTSTRAP */
+/* ---------- CARRUSEL DE BOOTSTRAP ---------- */
 .carousel-item{
-    height: 600px;
+    height: 300px;
     background: no-repeat center center scroll;
     background-size: cover;
 }
@@ -81,7 +81,7 @@
             text-decoration: none;
             color: black;
         }
-        .detalle-producto>div>img{
+        .detalle-producto>img{
             width: 80%;
             height: fit-content;
         }
