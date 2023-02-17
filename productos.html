@@ -17,9 +17,9 @@
     <iframe class="outside" src="./footer.html" frameborder="0"></iframe>
     <script>
         let contenedorProductos = document.getElementById("productos");
-        let fotosImagenes = ['./upload/perro.jpg', './upload/perro.jpg'];
-        let textoImagenes = ['muletras_para_perro','muletras_para_perro'];
-        let textoProducto = ['Muletas para perro','Muletas para perro'];
+        let fotosImagenes = ['./upload/perro.jpg', './upload/perro.jpg','./upload/perro.jpg','./upload/perro.jpg','./upload/perro.jpg','./upload/perro.jpg',];
+        let textoImagenes = ['muletras_para_perro','muletras_para_perro','muletras_para_perro','muletras_para_perro','muletras_para_perro','muletras_para_perro',];
+        let textoProducto = ['Muletas para perro','Muletas para perro', 'Muletas para perro','Muletas para perro','Muletas para perro','Muletas para perro',];
         
         for (let i = 0; i < fotosImagenes.length; i++) {
             contenedorProductos.innerHTML+="<div class='producto-especifico'>   <a href=./"+textoImagenes[i]+">     <img src="+fotosImagenes[i]+" alt="+textoImagenes[i]+"></a>     <p>"+textoProducto[i]+"</p>  </div>";
