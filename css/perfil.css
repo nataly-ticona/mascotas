@@ -1,0 +1,137 @@
+:root{
+    --original:#C2A693;
+    --original-hover: #c2a693d7;
+    --original-oscuro: #301701;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.outside{
+    /* el important sobreescribe cualquier otro estilo*/
+    width: 100% !important;
+    border: none;
+}
+
+/* atributos grupo 1 */
+
+.grupo-1{
+    display: flex;
+    margin: 2em auto;
+    width: fit-content;
+}
+.grupo-1>img{
+    width: 5em;
+    height: 5em;
+}
+
+/* atributos grupo 2 */
+.grupo-2{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+    padding-bottom: 50px;
+}
+.listas{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:2em;
+
+}
+
+.boton-menu:checked ~ .listas{
+    display: block;
+}
+
+/* estilo boton */
+.listas>div {
+    width: 100%;
+    height: 10em;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background:#C2A693;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+    overflow: hidden;
+    
+}
+
+.listas>div:hover {
+    color: #fff;
+}
+
+.listas>div span {
+    position: absolute;
+    background: #301701;
+    transition: .5s;
+    border-radius: 5px;
+}
+
+.listas>div span:nth-child(1) {
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: -100%;
+}
+
+.listas>div span:nth-child(2) {
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: -100%;
+}
+
+.listas>div span:nth-child(3) {
+    width: 1px;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+}
+
+.listas>div span:nth-child(4) {
+    width: 1px;
+    height: 100%;
+    top: -100%;
+    right: 0;
+}
+
+.listas>div:hover span:nth-child(1) {
+    left: 0;
+}
+
+.listas>div:hover span:nth-child(2) {
+    right: 0;
+}
+
+.listas>div:hover span:nth-child(3) {
+    bottom: 0;
+}
+
+.listas>div:hover span:nth-child(4) {
+    top: 0;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #301701;
+}
+
+.contenido{
+    text-align: center;
+}
+.titulo{
+    font-weight: bold;
+}
+
+.descripcion{
+    width: fit-content;
+}

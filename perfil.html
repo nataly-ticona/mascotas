@@ -5,144 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-
-        :root{
-            --original:#C2A693;
-            --original-hover: #c2a693d7;
-            --original-oscuro: #301701;
-        }
-
-        *{
-            margin:0;
-            padding: 0;
-        }
-
-        
-
-        .outside{
-        /* el important sobreescribe cualquier otro estilo*/
-        width: 100% !important;
-        height: fit-content;
-        border: none;
-        }
-
-
-
-        .grupo-2{
-            display: flex;
-            justify-content: center;
-            margin: 0 auto;
-            width: 80%;
-            padding-bottom: 50px;
-        }
-        .listas{
-            list-style: none;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap:2em;
-        }
-        
-        .boton-menu:checked ~ .listas{
-            display: block;
-        }
-        
-        /* estilo boton */
-        .listas>div {
-            width: 100%;
-            height: 10em;
-            text-align: center;
-            position: relative;
-            padding: 10px;
-            border: none;
-            outline: none;
-            background:#C2A693;
-            color: white;
-            cursor: pointer;
-            transition: .5s;
-            overflow: hidden;
-            
-        }
-
-        .listas>div:hover {
-            color: #fff;
-        }
-
-        .listas>div span {
-            position: absolute;
-            background: #301701;
-            transition: .5s;
-            border-radius: 5px;
-        }
-
-        .listas>div span:nth-child(1) {
-            width: 100%;
-            height: 1px;
-            top: 0;
-            left: -100%;
-        }
-
-        .listas>div span:nth-child(2) {
-            width: 100%;
-            height: 1px;
-            bottom: 0;
-            right: -100%;
-        }
-
-        .listas>div span:nth-child(3) {
-            width: 1px;
-            height: 100%;
-            bottom: -100%;
-            left: 0;
-        }
-
-        .listas>div span:nth-child(4) {
-            width: 1px;
-            height: 100%;
-            top: -100%;
-            right: 0;
-        }
-
-        .listas>div:hover span:nth-child(1) {
-            left: 0;
-        }
-
-        .listas>div:hover span:nth-child(2) {
-            right: 0;
-        }
-
-        .listas>div:hover span:nth-child(3) {
-            bottom: 0;
-        }
-
-        .listas>div:hover span:nth-child(4) {
-            top: 0;
-        }
-
-        .icon{
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: #301701;
-        }
-
-        .contenido{
-            text-align: center;
-        }
-        .titulo{
-            font-weight: bold;
-        }
-        
-        .descripcion{
-            width: fit-content;
-        }
-        </style>
+    <link rel="stylesheet" href="css/perfil.css">
 </head>
 <body>
     <iframe src="./header.html" class="outside"></iframe>
     <main class="main">
         <div class="grupo-1">
-            <h1>Mi cuenta</h1>
+            <img src="upload/iconosPerfil/perfil-usuario.png" alt="">
+            <div class="info-perfil">
+                <h1>Bienvenido Pepe!</h1>
+                <p>Nos alegramos de verte 👋</p>
+            </div>
+
         </div>
         
         <div class="grupo-2">
@@ -165,7 +39,7 @@
                     <span></span>
                     <span></span>
                     <div class="contenido">
-                        <img class="icon" src="upload/iconosPerfil/orden.png">
+                        <img class="icon" src="upload/iconosPerfil/iniciar-sesion.png">
                         <div class="contenido-texto">
                             <p class="titulo">Inicio de sesion y seguridad</p>
                             <p class="descripcion">Podra hacer un seguimiento de tus pedidos, devoluciones y registro</p>
@@ -177,7 +51,7 @@
                     <span></span>
                     <span></span>
                     <div class="contenido">
-                        <img class="icon" src="upload/iconosPerfil/orden.png">
+                        <img class="icon" src="upload/iconosPerfil/metodo-de-pago.png">
                         <div class="contenido-texto">
                             <p class="titulo">Mis pagos</p>
                             <p class="descripcion">Podra hacer un seguimiento de tus pedidos, devoluciones y registro</p>
@@ -190,7 +64,7 @@
                     <span></span>
                     <span></span>
                     <div class="contenido">
-                        <img class="icon" src="upload/iconosPerfil/orden.png">
+                        <img class="icon" src="upload/iconosPerfil/devoluciones.png">
                         <div class="contenido-texto">
                             <p class="titulo">preferencias de envio</p>
                             <p class="descripcion">Podra hacer un seguimiento de tus pedidos, devoluciones y registro</p>
@@ -202,7 +76,7 @@
                     <span></span>
                     <span></span>
                     <div class="contenido">
-                        <img class="icon" src="upload/iconosPerfil/orden.png">
+                        <img class="icon" src="upload/iconosPerfil/centro-de-llamadas.png">
                         <div class="contenido-texto">
                             <p class="titulo">contactanos</p>
                             <p class="descripcion">Podra hacer un seguimiento de tus pedidos, devoluciones y registro</p>
@@ -214,7 +88,7 @@
                     <span></span>
                     <span></span>
                     <div class="contenido">
-                        <img class="icon" src="upload/iconosPerfil/orden.png">
+                        <img class="icon" src="upload/iconosPerfil/empresa.png">
                         <div class="contenido-texto">
                             <p class="titulo">Quienes somos</p>
                             <p class="descripcion">Podra hacer un seguimiento de tus pedidos, devoluciones y registro</p>
