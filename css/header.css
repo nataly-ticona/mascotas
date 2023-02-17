@@ -16,16 +16,16 @@
     list-style: none;
     display: flex;
 }
-.menu-2 a:hover, .menu-1 li:nth-child(3):hover, .menu-1 li:nth-child(4):hover, .menu-1 li:nth-child(5):hover{
+.menu-2 a:hover, .menu-1 a:nth-child(3):hover, .menu-1 a:nth-child(4):hover, .menu-1 a:nth-child(5):hover{
     background-color: var(--original-hover) 
 }
 
 
 /* ---------- MENU-1 ---------- */
-.menu-1 li{
+.menu-1 a, .menu-1 li:nth-child(2){
     background-color: var(--original);
 }
-.menu-1 li:nth-child(1),.menu-1 li a img{
+.menu-1 a:nth-child(1),.menu-1>a>img{
     width: 70px;
     height: 60px;
 }
