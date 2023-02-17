@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/productos.css">
+    <title>Productos de perro</title>
+</head>
+<body>
+    <iframe class="outside" src="./header.html" frameborder="0"></iframe>
+    <main>
+        <div id="productos">
+
+        </div>
+    </main>
+    <iframe class="outside" src="./footer.html" frameborder="0"></iframe>
+    <script>
+        let contenedorProductos = document.getElementById("productos");
+        let fotosImagenes = ['./upload/perro.jpg', './upload/perro.jpg'];
+        let textoImagenes = ['muletras_para_perro','muletras_para_perro'];
+        let textoProducto = ['Muletas para perro','Muletas para perro'];
+        
+        for (let i = 0; i < fotosImagenes.length; i++) {
+            contenedorProductos.innerHTML+="<div class='producto-especifico'>   <a href=./"+textoImagenes[i]+">     <img src="+fotosImagenes[i]+" alt="+textoImagenes[i]+"></a>     <p>"+textoProducto[i]+"</p>  </div>";
+        }
+
+    </script>
+</body>
+</html>

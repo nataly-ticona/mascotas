@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.outside{
+    /* el important sobreescribe cualquier otro estilo*/
+    width: 100% !important;
+    border: none;
+}
+
+
+#productos{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    gap: 1%;
+}
+.producto-especifico{
+    /*
+        a
+            img
+        /a
+        p
+     */
+   
+    background-color: aqua;
+}
+
+.producto-especifico>a{
+    width: 100%;
+}
+.producto-especifico>a>img{
+    width: 50%;
+    height: 50%;
+}
+.producto-especifico>p{
+    border: 1px solid red;
+}
