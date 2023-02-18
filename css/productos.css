@@ -7,7 +7,9 @@
     --fondo-producto:#EAEFF7;
 }
 
-
+h2{
+    text-align: center;
+}
 #productos{
     width: 80%;
     margin: 0 auto;
