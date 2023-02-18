@@ -2,12 +2,7 @@
     margin: 0;
     padding: 0;
 }
-.outside{
-    /* el important sobreescribe cualquier otro estilo*/
-    width: 100% !important;
-    border: none;
-    bottom: 0;
-}
+
 /*  POSIBLE PALETA
 .color1 {color: #301701;}
 .color2 {color: #604A36;}
