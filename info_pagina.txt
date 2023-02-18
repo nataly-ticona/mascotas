@@ -1,0 +1,26 @@
+PALETA DE COLORES
+    #301701 
+    #604A36
+    #C2A693
+    #FAF6F0
+    #EAEFF7
+
+TEXTO
+Titulos de las fotos y titulos de la web: Lilita One
+Textos normales: Lato
+Testos pequeños: Ageo
+
+MENU
+Color del menu: #C2A693
+Color de menu cuando hacemos hover: #FAF6F0
+
+FOOTER
+Color del menu: #C2A693
+Color de menu cuando hacemos hover: #FAF6F0
+
+FOTOS CATALOGO
+Tamaño: 1200px X 600px
+FOTOS CARRUSEL
+Tamaño: 3000px X 600px
+FOTO PROMOCION
+Tamaño: 2400px X 300px

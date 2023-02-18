@@ -2,14 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
-/*  POSIBLE PALETA
-.color1 {color: #301701;}
-.color2 {color: #604A36;}
-.color3 {color: #C2A693;}
-.color4 {color: #FAF6F0;}
-.color5 {color: #EAEFF7;}
-*/
 :root{
     --fondo:#FAF6F0;
     --video:  #604A36;
