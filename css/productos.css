@@ -11,33 +11,62 @@ h2{
     text-align: center;
 }
 #productos{
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 220px);
+    grid-template-columns: repeat(auto-fill, 270px);
     gap: 1%;
     background-color: var(--fondo);
-    padding: 10px 5px 20px 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .producto-especifico{
-       /*a
-            img
-        /a
-        p*/
     width: 200px;
     height: 300px;
     background-color: var(--fondo-producto);
     margin: 0 auto;
     text-align: center; 
-    padding: 10px;
+    padding:15px;
 }
 
 .producto-especifico>a{
     width: 90%;
-    height: 50%;
+    height: 200px;
 }
 .producto-especifico>a>img{
     width: 100%;
+    height: 200px;
     border-radius: 10px;
+}
+
+/* media de la mitad de la pantalla */
+@media (max-width: 1300px){
+    #productos{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 275px);
+    }
+}
+
+/* media de un movil */
+@media (max-width: 480px) {
+    #productos{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 110px);
+    }
+    .producto-especifico{
+        width: 70px;
+        height: 150px;
+        font-size: 12px;
+    }
+    .producto-especifico>a{
+        width: 90%;
+        height: 70px;
+    }
+    .producto-especifico>a>img{
+        width: 95%;
+        height: 70px;
+    }
 }
