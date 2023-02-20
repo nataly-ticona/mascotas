@@ -139,3 +139,44 @@
     width: 100%;
     border-radius: 15px;
 }
+
+
+/* -------------------------------------RESPONSIVE------------------------------------- */
+@media(max-width:480px){
+    /* productos */
+    .productos{
+        width: 90%;
+        display: grid;
+        /* repite el tamaño de cada columna en un 50% */
+        grid-template-columns: repeat(1, 100%);
+        margin: 0 auto;
+    }
+    .productos-animal {
+        margin: 0 auto;
+        width: 80%;
+        height: 150px;
+        font-size: 13px;
+    }
+
+    /* banner promocion */
+    .promocion{
+        margin: 0 auto;
+        width: 80%;
+        height: 100px;
+    }
+    .promocion img{
+        height: 100px;
+    }
+
+    /* opciones de producto */
+    .catalogo{
+        margin: 0 auto;
+        align-items: center;
+        width: 90%;
+        display: grid;
+        /* repite el tamaño de cada columna en un 50% */
+        grid-template-columns: repeat(1, 100%);
+        /* espacio entre cada bloque */
+        /* sin grid en movil */
+    }
+}
