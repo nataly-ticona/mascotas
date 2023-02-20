@@ -9,7 +9,6 @@ let contenedorProductos = document.getElementById("productos");
             ['./upload/productos/7.jpg','muletras_para_perro','Muletas para perro',3.4],
             ['./upload/productos/8.jpg','muletras_para_perro','Muletas para perro',3.5],
             ['./upload/productos/9.jpg','muletras_para_perro','Muletas para perro',3.6],
-            ['./upload/productos/9.jpg','muletras_para_perro','Muletas para perro',3.6],
             ['./upload/productos/10.jpg','muletras_para_perro','Muletas para perro',3.6],
             ['./upload/productos/11.jpg','muletras_para_perro','Muletas para perro',3.6],
             ['./upload/productos/12.jpg','muletras_para_perro','Muletas para perro',3.6],
@@ -18,7 +17,8 @@ let contenedorProductos = document.getElementById("productos");
             ['./upload/productos/15.jpg','muletras_para_perro','Muletas para perro',3.6],
             ['./upload/productos/16.jpg','muletras_para_perro','Muletas para perro',3.6],
             ['./upload/productos/17.jpg','muletras_para_perro','Muletas para perro',3.6],
-            ['./upload/productos/11.jpg','muletras_para_perro','Muletas para perro',3.6],
+            ['./upload/productos/18.jpg','muletras_para_perro','Muletas para perro',3.6],
+            ['./upload/productos/19.jpg','muletras_para_perro','Muletas para perro',3.6],
         ]
 
         let contenido;

@@ -11,7 +11,7 @@ h2{
     text-align: center;
 }
 #productos{
-    width: 75%;
+    width: 60%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, 220px);
@@ -26,7 +26,7 @@ h2{
         /a
         p*/
     width: 200px;
-    height: fit-content;
+    height: 300px;
     background-color: var(--fondo-producto);
     margin: 0 auto;
     text-align: center; 
@@ -35,7 +35,7 @@ h2{
 
 .producto-especifico>a{
     width: 90%;
-    height: fit-content;
+    height: 50%;
 }
 .producto-especifico>a>img{
     width: 100%;
