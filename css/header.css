@@ -5,7 +5,7 @@
 }
 :root{
     --original:#C2A693;
-    --original-hover: #e3cec0d7;
+    --original-hover: #da8c58d7;
     --text-color: white;
 }
 
@@ -49,6 +49,8 @@
         /* input */
     .busqueda input{
         width: 100%;
+        border: none;
+        box-shadow: 2px white;
     }
         /* boton del input */
         .busqueda button, .busqueda .button-busqueda{
@@ -58,17 +60,17 @@
         } 
 /* icono de perfil */
 .menu-1>a:nth-child(3){
-    width: 60px;
+    width: 40px;
     padding: 15px;
 }
 /* icono de carrito */
 .menu-1>a:nth-child(4){
-    width: 75px;
+    width: 55px;
     padding: 15px;
 }
 /* icono de favoritos */
 .menu-1>a:nth-child(5){
-    width: 65px;
+    width: 45px;
     padding: 15px;
 }
 /* ---------- MENU-2 ---------- */
@@ -87,12 +89,8 @@
 }
 
 
-#responsive-menu{
-    display:none;
-}
-label{
-    display:none;
-}
+label{display:none;color:var(--original) ;}
+#responsive-menu{display:none;}
 .menu-responsive{display: none;}
 #menu-icon{display:none;}
 #overlay{display:none;}
@@ -100,17 +98,17 @@ label{
 @media(max-width:1300px){
     /* icono de perfil */
     .menu-1>a:nth-child(3){
-        width: 30px;
+        width: 40px;
         padding: 15px;
     }
     /* icono de carrito */
     .menu-1>a:nth-child(4){
-        width: 35px;
+        width: 45px;
         padding: 15px;
     }
     /* icono de favoritos */
     .menu-1>a:nth-child(5){
-        width: 35px;
+        width: 45px;
         padding: 15px;
     }
 } 
@@ -147,4 +145,38 @@ label{
         background-color: var(--original-hover);
     }
     .menu-2{display: none;}
+
+    /* botones de menu */
+    /* icono de perfil */
+    .menu-1>a:nth-child(3){
+        width: 55px;
+        padding: 15px;
+    }
+    /* icono de carrito */
+    .menu-1>a:nth-child(4){
+        width: 60px;
+        padding: 15px;
+    }
+    /* icono de favoritos */
+    .menu-1>a:nth-child(5){
+        width: 60px;
+        padding: 15px;
+    }
+    /* boton del input */
+    .busqueda button, .busqueda .button-busqueda{
+        border: none;
+        height: 30px;
+        width: 30px;
+    } 
+    .busqueda{
+        display: flex;
+        margin-top: 4%;
+        width: 70%;
+        height: 30px;
+        padding-left: 20px;
+    }
+
+    input[type=text]::placeholder {
+        font-size: 12px;
+    }
 }
