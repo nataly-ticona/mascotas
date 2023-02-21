@@ -1,3 +1,9 @@
+:root {
+    --original: #C2A693;
+    --original-hover: #c2a693d7;
+    --original-oscuro: #301701;
+}
+
 .breadcrumb-item+.breadcrumb-item::before {
     content: ">"
 }
@@ -246,7 +252,7 @@
 .row-underline {
     content: "";
     display: block;
-    border-bottom: 2px solid #3798db;
+    border-bottom: 2px solid #301701;
     margin: 0px 0px;
     margin-bottom: 20px;
     margin-top: 15px
@@ -279,7 +285,7 @@
 }
 
 .p-rating {
-    color: green
+    color: yellow;
 }
 
 .combo-pricing-item {
@@ -524,4 +530,17 @@ ul {
     padding-top: 2px;
     justify-content: flex-start;
     border-bottom-right-radius: 5px
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #b37036 !important;
+    border: none !important;
+}
+/* seccion de comentarios */
+.link-muted {
+    color: #aaa;
+}
+
+.link-muted:hover {
+    color: #1266f1;
 }

@@ -39,8 +39,12 @@
     padding-bottom: 1em;
 }
 #main-footer>.grupo-1>.bloques>a:link,a:active{
-    text-decoration: none;
+    text-decoration: none !important;
 }
+#main-footer>.grupo-1>.listas,a{
+    color: white !important;
+}
+
 
 
 #main-footer>.grupo-2{
