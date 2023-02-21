@@ -135,3 +135,13 @@
 .descripcion{
     width: fit-content;
 }
+
+@media (max-width:600px) {
+    .listas{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:2em;
+    
+    }
+}

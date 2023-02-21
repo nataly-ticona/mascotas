@@ -53,3 +53,15 @@
     width: 100%;
 
 }
+
+@media (max-width:600px) {
+    #main-footer>.grupo-1{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        width: 100%;
+        text-align: justify;
+    }
+    .bloques{
+        width: 100%;
+    }
+}
