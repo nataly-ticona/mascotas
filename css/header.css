@@ -6,6 +6,7 @@
 :root{
     --original:#C2A693;
     --original-hover: #e3cec0d7;
+    --text-color: white;
 }
 
 .menu{
@@ -75,4 +76,55 @@
     padding: 0.4%;
     width: 100%;
     text-align: center;
+}
+
+/* menu en responsive */
+#menu{
+    width: 100%;
+    display:flex;
+    position: relative;
+}
+
+
+#responsive-menu{
+    display:none;
+}
+label{
+    display:none;
+}
+.menu-responsive{display: none;}
+#menu-icon{display:none;}
+#overlay{display:none;}
+
+/* Movil */
+@media (max-width: 600px) {
+   
+    .menu {
+        color: var(--text-color);
+        width: 100%;
+    }
+    .menu label {
+        width: 100%;
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+      
+    /* menu desplegado */
+    .menu-responsive{
+        font-size: 20px;
+        width: 100%;
+    }
+    
+    /* si este esta checked cambiamos el menu */
+    .menu>input:checked ~ .menu-responsive{
+        display: contents;
+    }
+    .menu-responsive > a >p {
+        padding: 10px;
+    }
+    .menu-responsive > a >p:hover{
+        background-color: var(--original-hover);
+    }
+    .menu-2{display: none;}
 }
