@@ -13,19 +13,19 @@ h2{
 #productos{
     width: 80%;
     margin: 0 auto;
+    justify-content: center;
     display: grid;
     grid-template-columns: repeat(auto-fill, 270px);
-    gap: 1%;
     background-color: var(--fondo);
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 .producto-especifico{
+    margin: 10px;
     width: 200px;
     height: 300px;
     background-color: var(--fondo-producto);
-    margin: 0 auto;
     text-align: center; 
     padding:15px;
 }
@@ -41,6 +41,7 @@ h2{
 }
 
 /* media de la mitad de la pantalla */
+
 @media (max-width: 1300px){
     #productos{
         width: 90%;
