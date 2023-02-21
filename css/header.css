@@ -92,8 +92,6 @@
 label{display:none;color:var(--original) ;}
 #responsive-menu{display:none;}
 .menu-responsive{display: none;}
-#menu-icon{display:none;}
-#overlay{display:none;}
 
 @media(max-width:1300px){
     /* icono de perfil */
@@ -126,6 +124,7 @@ label{display:none;color:var(--original) ;}
         display: block;
         padding: 10px;
         text-align: center;
+        color:white;
     }
       
     /* menu desplegado */
