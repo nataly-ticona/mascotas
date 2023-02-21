@@ -11,6 +11,7 @@
 
 .menu{
     background-color: var(--original);
+    justify-content: center;
 }
 .menu a:hover{
     background-color: var(--original-hover);
@@ -41,7 +42,7 @@
 .busqueda{
     display: flex;
     margin-top: 1%;
-    width: 100%;
+    width: 70%;
     height: 40px;
     padding-left: 20px;
 }
@@ -95,6 +96,25 @@ label{
 .menu-responsive{display: none;}
 #menu-icon{display:none;}
 #overlay{display:none;}
+
+@media(max-width:1300px){
+    /* icono de perfil */
+    .menu-1>a:nth-child(3){
+        width: 30px;
+        padding: 15px;
+    }
+    /* icono de carrito */
+    .menu-1>a:nth-child(4){
+        width: 35px;
+        padding: 15px;
+    }
+    /* icono de favoritos */
+    .menu-1>a:nth-child(5){
+        width: 35px;
+        padding: 15px;
+    }
+} 
+
 
 /* Movil */
 @media (max-width: 600px) {
