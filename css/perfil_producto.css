@@ -249,21 +249,14 @@
     margin-top: 116px
 }
 
-.row-underline {
-    content: "";
-    display: block;
-    border-bottom: 2px solid #301701;
-    margin: 0px 0px;
-    margin-bottom: 20px;
-    margin-top: 15px
-}
 
 .deal-text {
     margin-left: -10px;
     font-size: 25px;
     margin-bottom: 10px;
     color: #000;
-    font-weight: 700
+    font-weight: 700;
+    text-align: center;
 }
 
 .padding-0 {
@@ -304,11 +297,11 @@
 }
 
 .add-both-cart-button {
-    margin-left: 36px
+    margin-left: 36px;
 }
 
 .items_text {
-    color: #b0b0b0
+    color: #b0b0b0;
 }
 
 .combo_item_price {
@@ -322,6 +315,9 @@
 
 .mt-10 {
     margin-top: 10px
+}
+#myCarousel{
+    width: 100% !important;
 }
 
 

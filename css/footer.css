@@ -55,7 +55,7 @@
 
 }
 
-@media(max-width: 480px){
+@media(max-width: 600px){
     #main-footer>.grupo-1-footer{
         width: 100%;
         display: grid;

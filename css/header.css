@@ -26,7 +26,18 @@
     display: flex;
 }
 
-
+h1{
+    font-family: 'Lilita One';font-size: 30px !important; 
+    color: rgb(79, 79, 79);
+}
+h3{
+    font-family: 'Lilita One';font-size: 22px !important;
+    color: rgb(109, 109, 109);
+    transition: all 2s;
+}
+p,a{
+    font-family: 'Lato';font-size: 20px !important;
+}
 /* ---------- MENU-1 ---------- */
 
 .menu-1>a{
@@ -59,20 +70,21 @@
             width: 50px;
         } 
 /* icono de perfil */
-.menu-1>a:nth-child(3){
+.boton-icono, .boton-icono>svg{
     width: 40px;
-    padding: 15px;
+    padding-top: 15px;
 }
-/* icono de carrito */
+
+/* icono de carrito
 .menu-1>a:nth-child(4){
     width: 55px;
     padding: 15px;
 }
 /* icono de favoritos */
-.menu-1>a:nth-child(5){
+/* .menu-1>a:nth-child(5){
     width: 45px;
-    padding: 15px;
-}
+    padding: 15px; 
+} */
 /* ---------- MENU-2 ---------- */
 
 .menu-2 a{
@@ -94,21 +106,11 @@ label{display:none;color:var(--original) ;}
 .menu-responsive{display: none;}
 
 @media(max-width:1300px){
-    /* icono de perfil */
-    .menu-1>a:nth-child(3){
-        width: 40px;
-        padding: 15px;
-    }
-    /* icono de carrito */
-    .menu-1>a:nth-child(4){
-        width: 45px;
-        padding: 15px;
-    }
-    /* icono de favoritos */
-    .menu-1>a:nth-child(5){
-        width: 45px;
-        padding: 15px;
-    }
+   /* icono de perfil */
+.boton-icono, .boton-icono>svg{
+    width: 40px;
+    padding-top: 10px;
+}
 } 
 
 
@@ -146,20 +148,9 @@ label{display:none;color:var(--original) ;}
     .menu-2{display: none;}
 
     /* botones de menu */
-    /* icono de perfil */
-    .menu-1>a:nth-child(3){
-        width: 55px;
-        padding: 15px;
-    }
-    /* icono de carrito */
-    .menu-1>a:nth-child(4){
-        width: 60px;
-        padding: 15px;
-    }
-    /* icono de favoritos */
-    .menu-1>a:nth-child(5){
-        width: 60px;
-        padding: 15px;
+    .boton-icono, .boton-icono>svg{
+        width: 30px;
+        padding-top: 10px;
     }
     /* boton del input */
     .busqueda button, .busqueda .button-busqueda{

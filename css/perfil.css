@@ -3,7 +3,11 @@
     --original-hover: #c2a693d7;
     --original-oscuro: #301701;
 }
-
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 *{
     margin: 0;
     padding: 0;
@@ -143,5 +147,8 @@
         grid-template-columns: repeat(2, 1fr);
         gap:2em;
     
+    }
+    footer{
+        position: relative;
     }
 }
