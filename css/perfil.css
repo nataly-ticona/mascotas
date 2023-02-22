@@ -145,8 +145,7 @@ footer{
         list-style: none;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap:2em;
-    
+        gap:2em;    
     }
     footer{
         position: relative;
